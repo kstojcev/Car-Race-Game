@@ -1,0 +1,219 @@
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.backgroundImage {
+  background-image: url(./img/raceTrack.jpg);
+  background-size: auto 50vh;
+  height: 50vh;
+}
+
+.backgroundImage :nth-child(1) {
+  position: absolute;
+  left: 0;
+  width: 300px;
+}
+
+.backgroundImage :nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 300px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-size: 150px;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.darken {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-size: 150px;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+button {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 12% !important;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  background: unset;
+}
+
+button:hover {
+  color: black;
+  background: white;
+}
+
+.carOne {
+  width: 30%;
+}
+
+.carTwo {
+  width: 30%;
+}
+
+.carOneResult h3 {
+  color: #ffebf7;
+}
+
+.carTwoResult h3 {
+  color: #ba0000;
+}
+
+.carOneResult p {
+  padding: 5%;
+  width: 65%;
+  margin-top: unset;
+  margin-bottom: unset;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid white;
+}
+
+.carTwoResult p {
+  padding: 5%;
+  width: 65%;
+  margin-top: unset;
+  margin-bottom: unset;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid white;
+}
+
+#statsOne {
+  color: #a2a2a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#statsTwo {
+  color: #a2a2a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.previousResults h3 {
+  margin-bottom: 6%;
+}
+
+.previousResults p {
+  width: 84%;
+  border: 2px solid white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1441px) {
+  .backgroundImage :nth-child(1) {
+    position: absolute;
+    left: 0;
+    width: 150px;
+  }
+  .backgroundImage :nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 150px;
+  }
+  .carOneResult p {
+    padding: 5%;
+    width: 80%;
+  }
+
+  .carTwoResult p {
+    padding: 5%;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  button {
+    width: 20% !important;
+  }
+  .backgroundImage :nth-child(1) {
+    position: absolute;
+    left: 0;
+    width: 150px;
+  }
+  .backgroundImage :nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .flag {
+    width: 100px;
+  }
+  button {
+    width: 30% !important;
+  }
+  .backgroundImage :nth-child(2) {
+    top: 300px;
+  }
+  .carOneResult p,
+  .carTwoResult p {
+    width: none;
+    font-size: 14px;
+  }
+  #previousResults h3 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .backgroundImage :nth-child(1) {
+    top: 230px;
+  }
+  .backgroundImage :nth-child(2) {
+    top: 67%;
+  }
+} ;
